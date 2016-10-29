@@ -1,5 +1,5 @@
 # Platform Game
-simple game using phaser
+simple game using phaser by Sammy
 
 http:phaser.io
 
@@ -44,5 +44,3 @@ function update () {
     mySprite.y =y;
 }
 </pre>
-
-
