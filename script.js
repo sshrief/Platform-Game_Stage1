@@ -2,20 +2,22 @@ var game = new Phaser.Game(640,480, Phaser.AUTO, 'world', {
   preload: preload, create: create, update: update });
 
 var mySprite;
+var mySprite2;
 var x = game.width/2;
 var y = game.height/2 -50;
 var dirX = 10;
 var dirY = 10;
 
 function preload() {
-    game.load.image('mySprite', 'assets/ball.png');
+    game.load.image('ball', 'assets/ball.png');
 
 }
 
 function create() {
     game.physics.startSystem(Phaser.Physics.ARCADE);
     game.stage.backgroundColor = '#333';
-    mySprite = game.add.sprite( 600,480, 'mySprite');
+    mySprite = game.add.sprite( 600,480, 'ball');
+    mySprite2 = game.add.sprite(300, 240, 'ball');
 }
 
 function update () {
